@@ -8,10 +8,11 @@
 
 
     <package name="readme" namespace="/" extends="struts-default">
-        <action name="index" class="com.monsterlin.action.IndexAction" method="listInit">
+        <action name="*" class="com.monsterlin.action.IndexAction" method="{1}">
 
-            <result name="success">/index.jsp</result>
+            <result name="pageInit">/index.jsp</result>
 
+            <result name="pageSatin">/index.jsp</result>
         </action>
 
     </package>

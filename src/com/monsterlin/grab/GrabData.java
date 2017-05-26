@@ -27,8 +27,8 @@ public class GrabData {
      * 抓取糗事百科并且装入数据库
      * @throws IOException
      */
-//    public static void grabDataFromQSBK()throws IOException {
-    public static void main(String [] args)throws IOException {
+    public static void grabDataFromQSBK()throws IOException {
+   // public static void main(String [] args)throws IOException {
 
 
         /**
@@ -123,5 +123,7 @@ public class GrabData {
         System.out.println("-------------------------------");
 
         System.out.println("成功抓取数据并装入数据库");
+
+
     }
 }

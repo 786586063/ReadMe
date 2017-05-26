@@ -23,7 +23,7 @@ public class TimerManager {
         Calendar calendar = Calendar.getInstance();
 
         /**定时每天2点执行方法**/
-        calendar.set(Calendar.HOUR_OF_DAY, 20);
+        calendar.set(Calendar.HOUR_OF_DAY, 2);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
 

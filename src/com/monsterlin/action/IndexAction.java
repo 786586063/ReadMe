@@ -12,11 +12,12 @@ import java.util.List;
 /**
  * author : monsterLin
  * email : monster941025@gmail.com
- * date : 2017/5/25
+ * date : 1017/5/25
  * desc : index处理
  */
 public class IndexAction extends ActionSupport {
     private List<SatinEntity> satinList;
+    private int pageSum ; //总页码数
 
     public List<SatinEntity> getSatinList() {
         return satinList;
@@ -26,16 +27,28 @@ public class IndexAction extends ActionSupport {
         this.satinList = satinList;
     }
 
+
+    public int getPageSum() {
+        return pageSum;
+    }
+
+    public void setPageSum(int pageSum) {
+        pageSum = pageSum;
+    }
+
     /**
      * 初始化列表
      * @return
      */
-    public String listInit() {
+    public String index() {
 
         GrabSatinDao grabSatinDao = new GrabSatinImpl();
-        satinList = grabSatinDao.getSatinData(20, 1);
+        satinList = grabSatinDao.getSatinData(10, 1);
 
-        return "success";
+        int sumSatin = grabSatinDao.sumSatin();
+        pageSum = sumSatin/10 + 1 ;
+
+        return "pageInit";
     }
 
 
@@ -47,18 +60,21 @@ public class IndexAction extends ActionSupport {
 
         HttpServletRequest request = ServletActionContext.getRequest();  //取得请求对象
         String strPageNum = request.getParameter("pageNum");
-        String strPageSize = request.getParameter("pageSize");
+        //String strPageSize = request.getParameter("pageSize");
 
         GrabSatinDao grabSatinDao = new GrabSatinImpl();
 
-        if (strPageNum != null && !"".equals(strPageNum) && strPageSize != null && !"".equals(strPageSize)) {
+        if (strPageNum != null && !"".equals(strPageNum) ) {
             int pageNum = Integer.parseInt(strPageNum);
-            int pageSize = Integer.parseInt(strPageSize);
+           // int pageSize = Integer.parseInt(strPageSize);
 
-            satinList = grabSatinDao.getSatinData(pageSize, pageNum);
+            satinList = grabSatinDao.getSatinData(10, pageNum);
 
         }
 
-        return "success";
+        return "pageSatin";
     }
+
+
+
 }

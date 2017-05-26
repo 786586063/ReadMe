@@ -26,6 +26,18 @@ public interface GrabSatinDao {
      */
      void addSatin(SatinEntity satinEntity);
 
+    /**
+     * 返回帖子总个数
+     * @return
+     */
+     int sumSatin();
 
+
+    /**
+     * 查询总页码
+     * @param satinSum
+     * @return
+     */
+     int pageSum(int satinSum);
 
 }

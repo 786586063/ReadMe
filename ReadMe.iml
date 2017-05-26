@@ -48,5 +48,6 @@
     <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.12-bin" level="project" />
     <orderEntry type="library" name="junit-4.5" level="project" />
+    <orderEntry type="library" name="antlr-2.7.7" level="project" />
   </component>
 </module>

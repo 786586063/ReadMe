@@ -1,15 +1,15 @@
 package com.monsterlin.impl;
 
-import com.monsterlin.bean.Satin;
 import com.monsterlin.bean.SatinEntity;
 import com.monsterlin.dao.GrabSatinDao;
-import com.monsterlin.dao.HibernateSessionFactory;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.monsterlin.dao.HibernateSessionFactory.getSession;
 
 /**
  * author : monsterLin
@@ -22,9 +22,9 @@ public class GrabSatinImpl implements GrabSatinDao {
     @Override
     public List<SatinEntity> getSatinData(int pageSize, int pageNum) {
         List<SatinEntity> list = new ArrayList<SatinEntity>();
-        Session session = HibernateSessionFactory.getSession();
+        Session session = getSession();
         try{
-            String hql = "from SatinEntity order by sid";     //hql是从对象中进行查询，使用Books而不是表Books
+            String hql = "from SatinEntity order by date desc ";     //hql是从对象中进行查询，使用Books而不是表Books
             Query q = session.createQuery(hql);
             q.setFirstResult((pageNum-1)*pageSize);   //过滤前面的pageNum-1页的数据
             q.setMaxResults(pageSize);   //取出当前页的数据来
@@ -39,7 +39,7 @@ public class GrabSatinImpl implements GrabSatinDao {
 
     @Override
     public void addSatin(SatinEntity satinEntity) {
-        Session session = HibernateSessionFactory.getSession();
+        Session session = getSession();
         Transaction tran = session.beginTransaction();  //开启事务
         try{
             session.save(satinEntity);
@@ -51,4 +51,21 @@ public class GrabSatinImpl implements GrabSatinDao {
             session.close();
         }
     }
+
+    @Override
+    public int sumSatin() {
+        String hql = "select count(*) from SatinEntity ";
+        Query q = getSession().createQuery(hql);
+        int count = ((Long) q.iterate().next()).intValue(); //查询数量，返回数量值
+        return count;
+
+    }
+
+    @Override
+    public int pageSum(int satinSum) {
+        int pageSum = satinSum/10 + 1 ;
+        return pageSum;
+    }
+
+
 }

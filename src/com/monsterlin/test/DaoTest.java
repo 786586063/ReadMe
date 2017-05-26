@@ -88,5 +88,13 @@ public class DaoTest {
     }
 
 
+    @Test
+    public void testPage(){
+        GrabSatinDao grabSatinDao = new GrabSatinImpl();
+        int sumSatin = grabSatinDao.sumSatin();
+        int sumPage = sumSatin/20 + 1 ;
+
+        System.out.println("总页码为："+sumPage);
+    }
 
 }
