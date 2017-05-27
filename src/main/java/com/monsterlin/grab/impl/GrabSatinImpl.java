@@ -2,9 +2,10 @@ package com.monsterlin.grab.impl;
 
 import com.monsterlin.bean.SatinEntity;
 import com.monsterlin.dao.GrabSatinDao;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.query.Query;
+//import org.hibernate.query.Query;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class GrabSatinImpl implements GrabSatinDao {
 
     @Override
     public List<SatinEntity> getSatinData(int pageSize, int pageNum) {
-        List<SatinEntity> list = new ArrayList<SatinEntity>();
+        List<SatinEntity> list = new ArrayList<>();
         Session session = getSession();
         try{
             String hql = "from SatinEntity order by date desc ";     //hql是从对象中进行查询，使用Books而不是表Books
