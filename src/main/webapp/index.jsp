@@ -19,13 +19,13 @@
 <body>
 <header>
     <h1 id="logo">
-        <a href="#">ReadMe</a>
+        <a href="http://123.206.57.142/ReadMe/index">ReadMe</a>
     </h1>
     <span id="flogo">让乐趣无处不在</span>
 </header>
 <div id="menu">
     <ul>
-        <li id="choose">段子百科</li>
+        <a href="http://123.206.57.142/ReadMe/index" style="font-family:arial;color:white;font-size:20px;"><li id="choose">段子百科</li></a>
     </ul>
 </div>
 <div id="main">
@@ -84,18 +84,15 @@
         <div class="sponsors">
             <h3>Links</h3>
             <ul>
-                <li><img src="https://shawnzeng.com/wp-content/uploads/2017/05/ad.jpg"></li>
-                <li><img src="https://shawnzeng.com/wp-content/uploads/2017/05/ad.jpg"></li>
-                <li><img src="https://shawnzeng.com/wp-content/uploads/2017/05/ad.jpg"></li>
-                <li><img src="https://shawnzeng.com/wp-content/uploads/2017/05/ad.jpg"></li>
-                <li><img src="https://shawnzeng.com/wp-content/uploads/2017/05/ad.jpg"></li>
-                <li><img src="https://shawnzeng.com/wp-content/uploads/2017/05/ad.jpg"></li>
+                <li><img src="http://cdn.monsterlin.com/images/AliyunImg.png"></li>
+                <li><img src="http://cdn.monsterlin.com/images/Google.png"></li>
+                <li><img src="http://cdn.monsterlin.com/images/Github.jpeg"></li>
             </ul>
         </div>
     </div>
 </div>
 <div class="footer">
-    <p>@2017 xxx xxxxx</p>
+    <p>@2017 ReadMe 让乐趣无处不在</p>
 </div>
 </body>
 
