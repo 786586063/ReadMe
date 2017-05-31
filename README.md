@@ -3,8 +3,12 @@
 
 ## 演示
 
-http://123.206.57.142/ReadMe/index
+http://readme.monsterlin.com
 
 ## 功能
 
-开发期ing...
+> 开发期间：基本功能已完成
+
+## 思路
+ 
+> 参考ReadHub设计而成，原地址：https://readhub.me/
