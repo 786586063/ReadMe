@@ -14,7 +14,7 @@ import java.util.Timer;
 public class TimerManager {
 
     //时间间隔，ms为单位
-    private static final long PERIOD_DAY = 24 * 60 * 60 * 100;
+    private static final long PERIOD_DAY = 24 * 60 * 60 * 1000;
 
     /**
      * 构造方法，用于初始化
@@ -22,8 +22,7 @@ public class TimerManager {
     public TimerManager() {
         Calendar calendar = Calendar.getInstance();
 
-        /**定时每天2点执行方法**/
-        calendar.set(Calendar.HOUR_OF_DAY, 2);
+        calendar.set(Calendar.HOUR_OF_DAY, 14);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
 
