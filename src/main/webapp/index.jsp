@@ -84,9 +84,9 @@
         <div class="sponsors">
             <h3>Links</h3>
             <ul>
-                <li><img src="http://cdn.monsterlin.com/images/AliyunImg.png"></li>
-                <li><img src="http://cdn.monsterlin.com/images/Google.png"></li>
-                <li><img src="http://cdn.monsterlin.com/images/Github.jpeg"></li>
+                <li><a href="https://www.aliyun.com/"><img src="http://cdn.monsterlin.com/images/AliyunImg.png" alt="Aliyun"></a></li>
+                <li><a href="https://www.google.com/"><img src="http://cdn.monsterlin.com/images/Google.png" alt="Google"></a></li>
+                <li><a href="https://github.com/"><img src="http://cdn.monsterlin.com/images/Github.jpeg" alt="Github"></a></li>
             </ul>
         </div>
     </div>
