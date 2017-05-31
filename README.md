@@ -1,9 +1,18 @@
 # ReadMe
-内容聚合类段子网站
+
+> 让乐趣无处不在  
+
+## 数据源
+
+> 数据来源为每天选择性抓取糗事百科网站的数据
+
+## 类型
+
+> 内容聚合类段子网站
 
 ## 演示
 
-http://readme.monsterlin.com
+> http://readme.monsterlin.com
 
 ## 功能
 
