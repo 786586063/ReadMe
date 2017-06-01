@@ -5,9 +5,7 @@
 ![](http://cdn.monsterlin.com/images/line_readme.png)
 
 ---
-
-![](http://cdn.monsterlin.com/images/why_readme.png)
-
+<img src="http://cdn.monsterlin.com/images/why_readme.png" width="400px" height="500px" />
 ---
 
 ### ReadMe
