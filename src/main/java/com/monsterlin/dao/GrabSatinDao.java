@@ -31,7 +31,6 @@ public interface GrabSatinDao {
      */
      int sumSatin();
 
-
     /**
      * 查询总页码
      * @param satinSum

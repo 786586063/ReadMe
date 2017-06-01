@@ -7,7 +7,7 @@ import java.util.Date;
  * author : monsterLin
  * email : monster941025@gmail.com
  * date : 2017/5/23
- * desc :
+ * desc : 段子实体类
  */
 @Entity
 @Table(name = "tb_satin", schema = "readme", catalog = "")

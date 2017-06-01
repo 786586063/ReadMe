@@ -16,6 +16,7 @@ import java.util.List;
  * desc : index处理
  */
 public class IndexAction extends ActionSupport {
+
     private List<SatinEntity> satinList;
     private int pageSum ; //总页码数
 
@@ -45,6 +46,9 @@ public class IndexAction extends ActionSupport {
         GrabSatinDao grabSatinDao = new GrabSatinImpl();
         satinList = grabSatinDao.getSatinData(10, 1);
 
+        /**
+         * TODO 计算页数: 未实现
+         */
         int sumSatin = grabSatinDao.sumSatin();
         pageSum = sumSatin/10 + 1 ;
 

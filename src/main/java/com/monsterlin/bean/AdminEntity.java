@@ -6,7 +6,7 @@ import javax.persistence.*;
  * author : monsterLin
  * email : monster941025@gmail.com
  * date : 2017/5/24
- * desc :
+ * desc : 管理员实体类
  */
 @Entity
 @Table(name = "tb_admin", schema = "readme", catalog = "")

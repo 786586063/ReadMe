@@ -7,7 +7,7 @@ import java.sql.Timestamp;
  * author : monsterLin
  * email : monster941025@gmail.com
  * date : 2017/5/23
- * desc :
+ * desc : 抓取日志
  */
 @Entity
 @Table(name = "tb_grab_record", schema = "readme", catalog = "")
