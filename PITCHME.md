@@ -8,7 +8,7 @@
 <img src="http://cdn.monsterlin.com/images/why_readme.png" width="400px" height="500px" />
 ---
 
-### ReadMe
+<font size="3" face="Comic Sans MS">ReadMe</font>
 
 - Respondent: monsterlin
 - http://monsterlin.com
