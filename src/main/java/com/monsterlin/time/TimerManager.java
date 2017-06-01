@@ -37,7 +37,7 @@ public class TimerManager {
          */
 
         if (date.before(new Date())) {
-            date = this.addDay(date, 1);
+            date = this.addDay(date, 2);
         }
 
         Timer timer = new Timer();
