@@ -1,6 +1,5 @@
 package com.monsterlin.dao;
 
-import com.monsterlin.bean.Satin;
 import com.monsterlin.bean.SatinEntity;
 
 import java.util.List;
