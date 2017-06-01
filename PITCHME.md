@@ -8,11 +8,11 @@
 <img src="http://cdn.monsterlin.com/images/why_readme.png" width="400px" height="500px" />
 ---
 
-<h1 style="font-family:Comic Sans MS">ReadMe</h1>
+<a style="font-family:Comic Sans MS">ReadMe</a>
 
-- Respondent: monsterlin
-- http://monsterlin.com
-- http://readme.monsterlin.com
+- <a>Respondent: monsterlin</a>
+- <a>monsterlin.com</a>
+- <a>readme.monsterlin.com</a>
 
 ---
 
