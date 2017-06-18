@@ -9,9 +9,9 @@
 		<!--配置mysql数据库连接参数-->
 		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://123.206.57.142:3306/readme?useUnicode=true&amp;characterEncoding=UTF-8</property>
-		<property name="connection.username">root</property>
-		<property name="connection.password">Baby1994</property>
+		<property name="hibernate.connection.url">jdbc:mysql://xxxxxxx:3306/readme?useUnicode=true&amp;characterEncoding=UTF-8</property>
+		<property name="connection.username">xxxxx</property>
+		<property name="connection.password">xxxxxx</property>
 
 		<mapping class="com.monsterlin.bean.GrabRecordEntity"/>
 		<mapping class="com.monsterlin.bean.SatinEntity"/>
